@@ -1,0 +1,48 @@
+{
+  "name": "tocsmith",
+  "version": "0.1.0",
+  "description": "Generate, insert and validate Markdown tables of contents with GitHub-compatible anchors.",
+  "author": "DelmarMG91",
+  "keywords": [
+    "markdown",
+    "toc",
+    "table-of-contents",
+    "cli",
+    "github",
+    "anchor",
+    "slug"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "tocsmith": "bin/tocsmith.js"
+  },
+  "main": "src/toc.js",
+  "exports": {
+    ".": "./src/toc.js",
+    "./parser": "./src/parser.js",
+    "./slug": "./src/slug.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DelmarMG91/tocsmith.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DelmarMG91/tocsmith/issues"
+  },
+  "homepage": "https://github.com/DelmarMG91/tocsmith#readme"
+}
